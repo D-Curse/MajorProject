@@ -1,6 +1,13 @@
+import Hero from '../components/dashboardPage/Hero'
+import FileInput from '../components/dashboardPage/FileInput'
+
+
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+      <Hero />
+      <FileInput/>
+    </>
   )
 }
 

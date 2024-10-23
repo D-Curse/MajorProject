@@ -8,14 +8,12 @@ import Chatbot from '../components/landingPage/Chatbot'
 function LandingPage() {
   return (
     <>
-        <div>
-            <Hero />
-            <Banner />
-            <About />
-            <Timeline />
-            <Github />
-            <Chatbot />
-        </div>
+      <Hero />
+      <Banner />
+      <About />
+      <Timeline />
+      <Github />
+      <Chatbot />
     </>
   )
 }
