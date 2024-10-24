@@ -8,6 +8,15 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToGithub = () => {
+    const githubSection = document.getElementById("Github");
+    if (githubSection) {
+      githubSection.scrollIntoView({ behavior: 'smooth' });
+    }else {
+      window.location.href = "https://github.com/D-Curse/MajorProject";
+    }
+  };
+
   return (
     <div className="navbar absolute w-full flex items-center justify-center p-4  bg-opacity-0">
       <div className="flex items-center justify-center bg-white bg-opacity-0 border w-[85%] px-8 py-1 rounded-[50px]">
@@ -19,13 +28,13 @@ const Navbar = () => {
         </button>
       </div>  
       <div className="flex items-center space-x-4">
-        <button className="p-2 text-white font-semibold">GITHUB</button>
+        <button className="p-2 text-white font-semibold" onClick={scrollToGithub} >GITHUB</button>
         <div className="relative">
           <button
             onClick={toggleDropdown}
             className="focus:outline-none focus:ring-2 bg-indigo-500 hover:bg-white hover:text-indigo-500 focus:ring-black-500 text-white py-2 px-3 rounded-full"
           >
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
           </button>
           {isOpen && (
             <ul className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-10">

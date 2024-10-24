@@ -30,8 +30,13 @@ module.exports = {
             transform: 'translateX(0)'
           }
         },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
       animation: {
+        bounce: 'bounce 0.5s infinite',
         fadeIn: 'fadeIn 1s ease-in-out',
         fadeInLeft: 'fadeInLeft 1.5s ease-in-out',
         fadeInRight: 'fadeInRight 1.5s ease-in-out',
